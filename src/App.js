@@ -12,6 +12,11 @@ function App() {
             <VideoBackground />
             <ProgramsComponent />
             <InformationComponent />
+
+            <h2 className='short-courses-heading'>Short Courses we Offer</h2>
+            <p>Our eight week intensive certificate course is open to senior high school graduates, tertiary students,<br></br>school graduates, workers and the general public.</p>
+            <h5>Evening and Weekend Session Only</h5>
+            
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>Edit <code>src/App.js</code> and save to reload.</p>
