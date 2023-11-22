@@ -13,6 +13,9 @@ video {
     object-fit: cover;
     margin-left: 10%; /* Center the video within the 90% container */
     display: block; /* Remove default inline styles */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInVideo 2s ease forwards; /* Animation for the video */
+    border-radius: 80px;
 }
 
 .overlay {
@@ -21,10 +24,9 @@ video {
     left: 8%;
     width: 80%;
     height: 80%;
-    background-color: rgba(0, 0, 0, .7); /* Black with 50% opacity */
-}
-
-video, .overlay {
+    background-color: rgba(0, 0, 0, .7); /* Black with 70% opacity */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInOverlay 2s ease forwards; /* Animation for the overlay */
     border-radius: 80px;
     box-shadow: 0px 0px 5px black;
 }
@@ -37,6 +39,8 @@ video, .overlay {
     text-align: center;
     color: #fff; /* Text color */
     text-shadow: 0px 0px 5px #2e1212;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInText 2s ease forwards; /* Animation for the text */
 }
 
 .text-overlay h1 {
@@ -45,4 +49,20 @@ video, .overlay {
     line-height: 1.5;
 }
 
-/* Add any additional styling you want for the text overlay */
+@keyframes fadeInVideo {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOverlay {
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
