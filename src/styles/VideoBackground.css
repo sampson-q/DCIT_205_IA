@@ -1,0 +1,48 @@
+/* VideoBackground.css */
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-left: 10%; /* Center the video within the 90% container */
+    display: block; /* Remove default inline styles */
+}
+
+.overlay {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .7); /* Black with 50% opacity */
+}
+
+video, .overlay {
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+    text-shadow: 0px 0px 5px #2e1212;
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Add any additional styling you want for the text overlay */
