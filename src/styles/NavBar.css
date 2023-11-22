@@ -1,0 +1,51 @@
+/* NavBar.css */
+
+.nav-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Default background color for light mode */
+}
+
+.light-mode {
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+}
+
+.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+.logo {
+    height: 6vmin;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+.nav-options a {
+    margin-right: 20px;
+    color: inherit; /* Use the color defined for the parent (either #000 or #fff) */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    text-decoration: none;
+}
+
+.nav-options a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+.darkmode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.darkmode-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333; /* Default icon color */
+}
