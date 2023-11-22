@@ -1,0 +1,40 @@
+/* InformationComponent.css */
+
+.information-container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .information-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-image {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .info-text {
+    flex: 1;
+  }
+  
+  .info-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-body {
+    margin-bottom: 15px;
+  }
+  
+  .info-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
