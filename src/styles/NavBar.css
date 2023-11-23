@@ -7,17 +7,18 @@
     align-items: center;
     background-color: #fff; /* Default background color for light mode */
     margin-bottom: 20px;
-    box-shadow: 0px 0px 5px black;
 }
 
 .light-mode {
     background-color: #fff; /* Light mode background color */
     color: #000; /* Light mode text color */
+    box-shadow: 0px 0px 5px black;
 }
 
 .dark-mode {
     background-color: #333; /* Dark mode background color */
     color: #fff; /* Dark mode text color */
+    box-shadow: 0px 0px 5px white;
 }
 
 .logo {

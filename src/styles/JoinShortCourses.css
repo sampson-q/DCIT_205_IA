@@ -1,0 +1,66 @@
+/* JoinShortCourses.css */
+.join-short-courses {
+    position: relative;
+    background-image: url('../assets/background.jpg'); /* Adjust the path accordingly */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px; /* Adjust as needed */
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.6); /* Transparent black overlay */
+    padding: 20px;
+    border-radius: 10px; /* Adjust as needed */
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  img {
+    height: 50px; /* Adjust as needed */
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #007BFF; /* Adjust as needed */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Adjust as needed */
+  }
+  
