@@ -5,8 +5,9 @@ import NavBar from './components/NavBar';
 import VideoBackground from './components/VideoBackground';
 import ProgramsComponent from './components/ProgramsComponent';
 import InformationComponent from './components/InformationComponent';
-import About from "./pages/home";
+import About from "./pages/About";
 import CoursesOffered from "./components/CoursesOffered";
+import JoinShortCourses from "./components/JoinShortCourses";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -32,6 +33,7 @@ function App() {
                                 <ProgramsComponent />
                                 <InformationComponent />
                                 <CoursesOffered />
+                                <JoinShortCourses.js />
                             </>
                         } />
                     </Routes>

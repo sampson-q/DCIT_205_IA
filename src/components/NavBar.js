@@ -16,6 +16,11 @@ function NavBar({ toggleTheme, isDarkMode }) {
                 <Link to="/resources" className="nav-link">Resources</Link>
                 <Link to="/courses" className="nav-link">Courses</Link>
                 <Link to="/labs" className="nav-link">Labs</Link>
+                <Link to="/personalityprofile" className="nav-link">Personality Profile</Link>
+                <Link to="/contacts" className="nav-link">Contacts</Link>
+                <Link to="/compssa" className="nav-link">COMPSSA</Link>
+                <Link to="/faqs" className="nav-link">FAQs</Link>
+                <Link to="/donate" className="nav-link">Donate</Link>
                 {/* Add more links for other pages */}
                 
                 <div className="darkmode-toggle">
