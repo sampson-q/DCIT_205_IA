@@ -15,17 +15,25 @@ function NavBar() {
 
     return (
         <div className={`nav-bar ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-            <img src={logoImg} alt="logo" className="logo"/>
-            
+            <img src={logoImg} alt="logo" className="logo" />
+
             <div className="nav-options">
                 <a href="/" className="nav-link">Home</a>
                 <a href="/about" className="nav-link">About</a>
-                <a href="/faculty" className="nav-link">Faculty</a>
-                <a href="/research-groups" className="nav-link">Research Groups</a>
+                <a href="/Resources" className="nav-link">Resources</a>
+                <a href="/Courses" className="nav-link">Courses</a>
+                <a href="/Labs" className="nav-link">Labs</a>
+                <a href="/PersonalityProfile" className="nav-link">Personality Profile</a>
+                <a href="/Contacts" className="nav-link">Contacts</a>
+                <a href="/COMPSSA" className="nav-link">COMPSSA</a>
+                <a href="/FAQs" className="nav-link">FAQs</a>
+                <a href="/Donate" className="nav-link">Donate</a>
+
+
 
                 <div className="darkmode-toggle">
                     <button onClick={toggleTheme} className="darkmode-button">
-                        {isDarkMode ? <FiSun size={20} color="#fff"/> : <FiMoon size={20} />}
+                        {isDarkMode ? <FiSun size={20} color="#fff" /> : <FiMoon size={20} />}
                     </button>
                 </div>
             </div>
