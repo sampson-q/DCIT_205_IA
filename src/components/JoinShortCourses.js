@@ -2,7 +2,6 @@
 import React from "react";
 import { FiGraduationCap, FiAward } from "react-icons/fi";
 import "../styles/JoinShortCourses.css";
-import backgroundImage from "../assets/under_grad_main.jpg"; // Replace with your actual image path
 
 function JoinShortCourses() {
   return (
@@ -18,7 +17,7 @@ function JoinShortCourses() {
         </div>
         <div className="columns">
           <div className="column">
-            <FiGraduationCap size={50} color="#fff" />
+            {/* <FiGraduationCap size={50} color="#fff" /> */}
             <h3>Expert Instructions</h3>
             <p>
               Our instructors have years of industry experience which presents
@@ -26,7 +25,7 @@ function JoinShortCourses() {
             </p>
           </div>
           <div className="column">
-            <FiAward size={50} color="#fff" />
+            {/* <FiAward size={50} color="#fff" /> */}
             <h3>Certification</h3>
             <p>
               You earn a certificate of completion from the department after

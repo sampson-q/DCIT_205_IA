@@ -33,7 +33,7 @@ function App() {
                                 <ProgramsComponent />
                                 <InformationComponent />
                                 <CoursesOffered />
-                                <JoinShortCourses.js />
+                                <JoinShortCourses />
                             </>
                         } />
                     </Routes>
