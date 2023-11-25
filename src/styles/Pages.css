@@ -1,0 +1,121 @@
+.aboutus {
+    position: relative;
+    background-image: url('../assets/about1.jpg');
+    /*Adjust the path accordingly*/
+    background-size: cover;
+    background-position: center;
+    padding: 90px 60px;
+    border-radius: 50px;
+
+
+}
+
+.textoverlay {
+    padding: 20px;
+    border-radius: 50px;
+
+}
+
+.textcontent {
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: rgb(12, 48, 121);
+}
+
+p a {
+    font-size: 30px;
+    margin-top: 20px;
+    color: blue;
+    opacity: inherit;
+}
+
+h2 {
+    color: rgb(165, 70, 70);
+    font-size: large;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.columndiv {
+    column-count: 2;
+    column-gap: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: extra-expanded;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.firstp {
+    font-style: normal;
+    font-display: block;
+}
+
+/*Get to know us*/
+/* ProgramsComponent.css */
+.Containerheader {
+    padding: 60px;
+    text-align: center;
+}
+
+.imagecontainer {
+    margin-top: -56px;
+    display: flex;
+}
+
+
+
+.imagecolumn {
+    flex: 2;
+    margin: 10px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(247, 224, 224);
+    box-shadow: 0px 0px 3px black;
+
+
+
+}
+
+.imageheader {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    border-style: double;
+    width: 80%;
+    text-align: center;
+}
+
+.Orgimage {
+    background-image: url('../assets/org.jpg');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px
+}
+
+.imagefooter {
+    text-align: justify;
+    font-style: oblique;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.Comimage {
+    background-image: url('../assets/community.jpg');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px
+}
