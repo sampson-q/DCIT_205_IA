@@ -1,66 +1,68 @@
-/* JoinShortCourses.css */
-.join-short-courses {
+/* VideoBackground.css */
+
+.video-background {
     position: relative;
-    background-image: url('../assets/under_grad_main.jpg'); /*Adjust the path accordingly*/
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 60px 20px; /* Adjust as needed */
-  }
-  
-  .overlay {
-    background: rgba(0, 0, 0, 0.6); /* Transparent black overlay */
-    padding: 20px;
-    border-radius: 10px; /* Adjust as needed */
-  }
-  
-  .content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-left: 10%; /* Center the video within the 90% container */
+    display: block; /* Remove default inline styles */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInVideo 2s ease forwards; /* Animation for the video */
+    border-radius: 80px;
+}
+
+.overlay {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .7); /* Black with 70% opacity */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInOverlay 2s ease forwards; /* Animation for the overlay */
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  columns {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .column {
-    flex: 1;
-    text-align: center;
-    margin: 0 10px;
-  }
-  
-  img {
-    height: 50px; /* Adjust as needed */
-  }
-  
-  h3 {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
-  p {
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  button {
-    background-color: #007BFF; /* Adjust as needed */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #0056b3; /* Adjust as needed */
-  }
-  
+    color: #fff; /* Text color */
+    text-shadow: 0px 0px 5px #2e1212;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInText 2s ease forwards; /* Animation for the text */
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@keyframes fadeInVideo {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOverlay {
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
