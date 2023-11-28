@@ -57,7 +57,7 @@ h2 {
 }
 
 /*Get to know us*/
-/* ProgramsComponent.css */
+/* get to know us section */
 .Containerheader {
     padding: 60px;
     text-align: center;
@@ -113,6 +113,70 @@ h2 {
 
 .Comimage {
     background-image: url('../assets/community.jpg');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px
+}
+
+.Disimage {
+    background-image: url('../assets/distance.jpg');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px
+}
+
+.future {
+
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px
+}
+
+.bgresources {
+    position: relative;
+    background-image: url('../assets/resourcesmain.jpg');
+    /*Adjust the path accordingly*/
+    background-size: cover;
+    background-position: center;
+    padding: 90px 60px;
+    border-radius: 50px;
+}
+
+.blockchain {
+    background-image: url('../assets/blockchain.webp');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px;
+}
+
+.Topai {
+    background-image: url('../assets/topai.webp');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px;
+}
+
+.IAstudies {
+    background-image: url('../assets/AIstudies.webp');
+    margin-bottom: 5px;
+    background-size: cover;
+    padding: 50px 50px;
+    height: 400px;
+    width: 1000px;
+}
+
+.aicourses {
+    background-image: url('../assets/AI\ 2.webp');
     margin-bottom: 5px;
     background-size: cover;
     padding: 50px 50px;
