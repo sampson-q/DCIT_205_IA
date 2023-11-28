@@ -4,7 +4,6 @@ import orgImage from '../assets/org.jpg';
 import comImage from '../assets/community.jpg';
 import disImage from '../assets/distance.jpg';
 import buildingFutureVid from '../assets/buildingfuture.mp4';
-import backgroundVideo from "../assets/video-bg.mp4";
 
 function About() {
     return (

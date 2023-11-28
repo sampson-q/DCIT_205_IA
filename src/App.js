@@ -9,6 +9,7 @@ import About from "./pages/About";
 import CoursesOffered from "./components/CoursesOffered";
 import JoinShortCourses from "./components/JoinShortCourses";
 import Footer from "./components/Footer";
+import Resources from "./pages/Resources";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,6 +38,7 @@ function App() {
                                 <JoinShortCourses />
                             </>
                         } />
+                        <Route path="/resources" element={<Resources />} />
                     </Routes>
                 </div>
                 
