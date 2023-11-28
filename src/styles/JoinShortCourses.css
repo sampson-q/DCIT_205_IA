@@ -1,68 +1,123 @@
-/* VideoBackground.css */
-
-.video-background {
+.join-short-courses-container {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-video {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    margin-left: 10%; /* Center the video within the 90% container */
-    display: block; /* Remove default inline styles */
-    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
-    animation: fadeInVideo 2s ease forwards; /* Animation for the video */
-    border-radius: 80px;
-}
-
-.overlay {
+    height: 380px; /* Set the desired height for your component */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/under_grad_main.jpg');
+  }
+  
+  .short-courses-overlay {
     position: absolute;
-    top: 5%;
-    left: 8%;
-    width: 80%;
-    height: 80%;
-    background-color: rgba(0, 0, 0, .7); /* Black with 70% opacity */
-    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
-    animation: fadeInOverlay 2s ease forwards; /* Animation for the overlay */
-    border-radius: 80px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, .7);
+  }
+  
+  .short-courses-overlay h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: -50px;
+  }
+  
+  .short-courses-overlay p {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .column h2 {
+    margin-top: 10px;
+    color: teal;
+    font-size: 25px;
+    margin-bottom: -20px;
+  }
+  
+  .two-column-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Responsive styles (optional) */
+  @media (max-width: 768px) {
+    .two-column-container {
+      flex-direction: column;
+    }
+  }
+  
+  .short-courses-overlay button {
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 25px;
+    background-color: teal;
+    color: white;
+    font-size: 15px;
+}
+  
+.short-courses-overlay h4 {
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.sliding-container {
+    display: flex;
+    width: 55%; /* Set width to 100% */
+}
+  
+.sliding-column-1, .sliding-column-2, .sliding-column-3, .sliding-column-4 {
+    flex: 1;
+    transition: transform 1s ease-in-out;
+    margin-left: 4%;
+}
+  
+.sliding-image img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px black;
 }
-
-.text-overlay {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+.sliding-text {
     text-align: center;
-    color: #fff; /* Text color */
-    text-shadow: 0px 0px 5px #2e1212;
-    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
-    animation: fadeInText 2s ease forwards; /* Animation for the text */
 }
-
-.text-overlay h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    line-height: 1.5;
-}
-
-@keyframes fadeInVideo {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInOverlay {
-    to {
-        opacity: 0.7;
-    }
-}
-
-@keyframes fadeInText {
-    to {
-        opacity: 1;
-    }
+  
+  /* Animation styles */
+  .sliding-column-1 {
+    transform: translateX(0%);
+  }
+  
+  .sliding-column-2 {
+    transform: translateX(100%);
+  }
+  
+  .sliding-column-3 {
+    transform: translateX(200%);
+  }
+  
+  .sliding-column-4 {
+    transform: translateX(300%);
+  }
+  
+.sliding-container:hover .sliding-column-1, .sliding-container:hover .sliding-column-2,
+.sliding-container:hover .sliding-column-3, .sliding-container:hover .sliding-column-4 {
+  transition: none;
 }
