@@ -23,7 +23,7 @@ function App() {
         <Router>
             <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
                 <NavBar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-                
+
                 <div className="pageContent">
                     <Routes>
                         <Route path="/about" element={<About />} />
@@ -42,15 +42,15 @@ function App() {
                         <Route path="/courses" element={
                             <>
                                 <CoursesOffered />
-                                <div style={{height: 80}}></div>
+                                <div style={{ height: 80 }}></div>
                                 <ProgramsComponent />
-                                <div style={{height: 60}}></div>
+                                <div style={{ height: 60 }}></div>
                                 <JoinShortCourses />
                             </>
                         } />
                     </Routes>
                 </div>
-                
+
                 <Footer />
             </div>
         </Router>
