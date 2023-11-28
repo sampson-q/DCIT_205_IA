@@ -1,7 +1,7 @@
 .join-short-courses-container {
     position: relative;
     width: 100%;
-    height: 380px; /* Set the desired height for your component */
+    
     align-items: center;
     justify-content: center;
   }
@@ -9,7 +9,7 @@
   .image-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 380px;
     background-size: cover;
     background-position: center;
     background-image: url('../assets/under_grad_main.jpg');
@@ -78,29 +78,30 @@
     margin-top: 40px;
 }
 
+/* SlidingComponent.css */
 .sliding-container {
     display: flex;
-    width: 55%; /* Set width to 100% */
-}
+    width: 55%;
+  }
   
-.sliding-column-1, .sliding-column-2, .sliding-column-3, .sliding-column-4 {
+  .sliding-column {
     flex: 1;
     transition: transform 1s ease-in-out;
     margin-left: 4%;
-}
+  }
   
-.sliding-image img {
+  .sliding-image img {
     width: 200px;
-    height: 150px;
-    border-radius: 10px;
+    height: 170px;
+    border-radius: 40px;
     box-shadow: 0px 0px 5px black;
-}
+  }
   
-.sliding-text {
+  .sliding-text {
+    padding: 10px;
     text-align: center;
-}
+  }
   
-  /* Animation styles */
   .sliding-column-1 {
     transform: translateX(0%);
   }
@@ -117,7 +118,7 @@
     transform: translateX(300%);
   }
   
-.sliding-container:hover .sliding-column-1, .sliding-container:hover .sliding-column-2,
-.sliding-container:hover .sliding-column-3, .sliding-container:hover .sliding-column-4 {
-  transition: none;
-}
+  .sliding-container:hover .sliding-column {
+    transition: none;
+  }
+  

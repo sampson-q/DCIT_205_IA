@@ -43,57 +43,57 @@ const SlidingComponent = () => {
         { id: 4, images: [webdevImage], texts: ['Introduction To Web Programming', 'Understand the fundamentals of web technologies and create web-based applications with latest technologies.'] },
       ]);
   
-    useEffect(() => {
-      const container = document.querySelector('.sliding-container');
-  
-      const handleMouseEnter = () => {
-        clearInterval(intervalId);
-      };
-  
-      const handleMouseLeave = () => {
+      useEffect(() => {
+        let intervalId;
+    
+        const startSliding = () => {
+          intervalId = setInterval(() => {
+            setColumns((prevColumns) => {
+              const newColumns = [...prevColumns];
+              const lastColumn = newColumns.pop();
+              newColumns.unshift(lastColumn);
+              return newColumns;
+            });
+          }, 5000);
+        };
+    
+        const container = document.querySelector('.sliding-container');
+    
+        const handleMouseEnter = () => {
+          clearInterval(intervalId);
+        };
+    
+        const handleMouseLeave = () => {
+          startSliding();
+        };
+    
+        container.addEventListener('mouseenter', handleMouseEnter);
+        container.addEventListener('mouseleave', handleMouseLeave);
+    
         startSliding();
-      };
-  
-      const startSliding = () => {
-        const intervalId = setInterval(() => {
-          setColumns((prevColumns) => {
-            const newColumns = [...prevColumns];
-            const lastColumn = newColumns.pop();
-            newColumns.unshift(lastColumn);
-            return newColumns;
-          });
-        }, 5000);
-  
-        return intervalId;
-      };
-  
-      container.addEventListener('mouseenter', handleMouseEnter);
-      container.addEventListener('mouseleave', handleMouseLeave);
-  
-      const intervalId = startSliding();
-  
-      return () => {
-        clearInterval(intervalId);
-        container.removeEventListener('mouseenter', handleMouseEnter);
-        container.removeEventListener('mouseleave', handleMouseLeave);
-      };
-    }, []);
-  
-    return (
+    
+        return () => {
+          clearInterval(intervalId);
+          container.removeEventListener('mouseenter', handleMouseEnter);
+          container.removeEventListener('mouseleave', handleMouseLeave);
+        };
+      }, []);
+    
+      return (
         <div className="sliding-container">
-            {columns.map((column, index) => (
-                <div key={column.id} className={`sliding-column-${index + 1}`}>
-                    <div className="sliding-image">
-                    <h2>{column.texts[0]}</h2>
-                        <img src={column.images[0]} alt={`Image ${column.id}`} />
-                    </div>
-                    <div className="sliding-text">
-                        <p>{column.texts[1]}</p>
-                    </div>
-                </div>
-            ))}
+          {columns.map((column, index) => (
+            <div key={column.id} className={`sliding-column sliding-column-${index + 1}`}>
+                <h2>{column.texts[0]}</h2>
+              <div className="sliding-image">
+                <img src={column.images[0]} alt={`Image ${column.id}`} />
+              </div>
+              <div className="sliding-text">
+                <p>{column.texts[1]}</p>
+              </div>
+            </div>
+          ))}
         </div>
-    );
-};  
+      );
+    };  
 
 export default JoinShortCourses;
