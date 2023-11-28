@@ -11,6 +11,7 @@ import JoinShortCourses from "./components/JoinShortCourses";
 import Footer from "./components/Footer";
 import Resources from "./pages/Resources";
 import Lab from "./components/Lab";
+import Courses from "./pages/Courses";
 
 import hardwareLabImage from "./assets/hardwareLab.jpeg";
 import roboticsLabImage from "./assets/roboticsLab.jpeg";
@@ -47,13 +48,15 @@ function App() {
                         <Route path="/resources" element={<Resources />} />
 
                         <Route path="/courses" element={
-                            <>
-                                <CoursesOffered />
-                                <div style={{ height: 80 }}></div>
-                                <ProgramsComponent />
-                                <div style={{ height: 60 }}></div>
-                                <JoinShortCourses />
-                            </>
+                            // <>
+                            //     <CoursesOffered />
+                            //     <div style={{ height: 80 }}></div>
+                            //     <ProgramsComponent />
+                            //     <div style={{ height: 60 }}></div>
+                            //     <JoinShortCourses />
+                            // </>
+
+                            <Courses />
                         } />
 
                         <Route path="/labs" element={

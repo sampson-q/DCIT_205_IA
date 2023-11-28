@@ -1,19 +1,22 @@
-.aboutus {
+.aboutus, .courses {
     position: relative;
-    background-image: url('../assets/about1.jpg');
-    /*Adjust the path accordingly*/
     background-size: cover;
     background-position: center;
     padding: 90px 60px;
     border-radius: 50px;
+}
 
+.aboutus {
+    background-image: url('../assets/about1.jpg');
+}
 
+.courses {
+    background-image: url('../assets/about1.jpg');
 }
 
 .textoverlay {
     padding: 20px;
     border-radius: 50px;
-
 }
 
 .textcontent {

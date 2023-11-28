@@ -8,7 +8,7 @@ import buildingFutureVid from '../assets/buildingfuture.mp4';
 function About() {
     return (
         <div>
-            <div class="aboutus">
+            <div class="courses">
                 <div class="textoverlay">
                     <div class="textcontent">
                         <h1>About Us</h1>
