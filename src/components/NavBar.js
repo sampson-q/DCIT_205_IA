@@ -16,7 +16,7 @@ function NavBar({ toggleTheme, isDarkMode }) {
                 <Link to="/resources" className="nav-link">Resources</Link>
                 <Link to="/courses" className="nav-link">Courses</Link>
                 <Link to="/labs" className="nav-link">Labs</Link>
-                <Link to="/personalityprofile" className="nav-link">Personality Profile</Link>
+                <Link to="/officehod" className="nav-link">The HOD</Link>
                 <Link to="/contacts" className="nav-link">Contacts</Link>
                 <Link to="/entryrequirements" className="nav-link">Entry Requirements</Link>
                 <Link to="/faqs" className="nav-link">FAQs</Link>

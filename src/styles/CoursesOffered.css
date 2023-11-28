@@ -1,3 +1,16 @@
 .courses-offered {
     text-align: center;
 }
+
+.gtku-columns {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-div img{
+    border-radius: 40px;
+    width: 90%;
+}

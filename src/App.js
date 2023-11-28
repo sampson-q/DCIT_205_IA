@@ -21,7 +21,9 @@ import networkingLabImage from "./assets/networkingLab.jpeg";
 import computerLabImage from "./assets/computerLab.jpeg";
 import researchLabImage from "./assets/researchLab.jpeg";
 import EntryRequirements from "./pages/EntryRequirements";
+import OfficeHOD from "./pages/OfficeHOD";
 
+import deptImg from "./assets/departmentalevents.jpg";
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -41,7 +43,7 @@ function App() {
                             <>
                                 <VideoBackground />
                                 <ProgramsComponent />
-                                <InformationComponent />
+                                <InformationComponent image={deptImg} body="Programmes, seminars and events organized by the department" title="Departmental Events" event/>
                                 <CoursesOffered />
                                 <JoinShortCourses />
                             </>
@@ -100,9 +102,8 @@ function App() {
                                 />
                             </>
                         } />
-                        <Route path="/entryrequirements" element={<EntryRequirements />
-
-                        } />
+                        <Route path="/entryrequirements" element={<EntryRequirements />} />
+                        <Route path="/officehod" element={<OfficeHOD />} />
                     </Routes>
                 </div>
 
