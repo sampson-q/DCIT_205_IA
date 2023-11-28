@@ -39,6 +39,15 @@ function App() {
                             </>
                         } />
                         <Route path="/resources" element={<Resources />} />
+                        <Route path="/courses" element={
+                            <>
+                                <CoursesOffered />
+                                <div style={{height: 80}}></div>
+                                <ProgramsComponent />
+                                <div style={{height: 60}}></div>
+                                <JoinShortCourses />
+                            </>
+                        } />
                     </Routes>
                 </div>
                 
