@@ -18,11 +18,11 @@ function NavBar({ toggleTheme, isDarkMode }) {
                 <Link to="/labs" className="nav-link">Labs</Link>
                 <Link to="/personalityprofile" className="nav-link">Personality Profile</Link>
                 <Link to="/contacts" className="nav-link">Contacts</Link>
-                <Link to="/compssa" className="nav-link">COMPSSA</Link>
+                <Link to="/entryrequirements" className="nav-link">Entry Requirements</Link>
                 <Link to="/faqs" className="nav-link">FAQs</Link>
                 <Link to="/donate" className="nav-link">Donate</Link>
                 {/* Add more links for other pages */}
-                
+
                 <div className="darkmode-toggle">
                     <button onClick={toggleTheme} className="darkmode-button">
                         {isDarkMode ? <FiSun size={20} color="#fff" /> : <FiMoon size={20} />}
