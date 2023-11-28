@@ -2,13 +2,14 @@
 
 import React from "react";
 import "../styles/VideoBackground.css"; // Import your CSS file
+import backgroundVideo from "../assets/video-bg.mp4";
 
 function VideoBackground() {
     return (
         <div className="video-background">
             
             <video autoPlay loop muted>
-                <source src="https://dcs.ug.edu.gh/video-bg.mp4" type="video/mp4" />
+                <source src={backgroundVideo} type="video/mp4" />
             </video>
 
             <div className="overlay"></div>

@@ -1,72 +1,123 @@
-/* JoinShortCourses.css */
-.join-short-courses {
-  position: relative;
-  background-image: url('../assets/under_grad_main.jpg');
-  /*Adjust the path accordingly*/
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 60px 20px;
-  /* Adjust as needed */
+.join-short-courses-container {
+    position: relative;
+    width: 100%;
+    height: 380px; /* Set the desired height for your component */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/under_grad_main.jpg');
+  }
+  
+  .short-courses-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, .7);
+  }
+  
+  .short-courses-overlay h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: -50px;
+  }
+  
+  .short-courses-overlay p {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .column h2 {
+    margin-top: 10px;
+    color: teal;
+    font-size: 25px;
+    margin-bottom: -20px;
+  }
+  
+  .two-column-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Responsive styles (optional) */
+  @media (max-width: 768px) {
+    .two-column-container {
+      flex-direction: column;
+    }
+  }
+  
+  .short-courses-overlay button {
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 25px;
+    background-color: teal;
+    color: white;
+    font-size: 15px;
+}
+  
+.short-courses-overlay h4 {
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
 }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  /* Transparent black overlay */
-  padding: 20px;
-  border-radius: 10px;
-  /* Adjust as needed */
+.sliding-container {
+    display: flex;
+    width: 55%; /* Set width to 100% */
 }
-
-.content {
-  text-align: center;
+  
+.sliding-column-1, .sliding-column-2, .sliding-column-3, .sliding-column-4 {
+    flex: 1;
+    transition: transform 1s ease-in-out;
+    margin-left: 4%;
 }
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  
+.sliding-image img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
 }
-
-columns {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  
+.sliding-text {
+    text-align: center;
 }
-
-.column {
-  flex: 1;
-  text-align: center;
-  margin: 0 10px;
-}
-
-img {
-  height: 50px;
-  /* Adjust as needed */
-}
-
-h3 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-p {
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-button {
-  background-color: #007BFF;
-  /* Adjust as needed */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #0056b3;
-  /* Adjust as needed */
+  
+  /* Animation styles */
+  .sliding-column-1 {
+    transform: translateX(0%);
+  }
+  
+  .sliding-column-2 {
+    transform: translateX(100%);
+  }
+  
+  .sliding-column-3 {
+    transform: translateX(200%);
+  }
+  
+  .sliding-column-4 {
+    transform: translateX(300%);
+  }
+  
+.sliding-container:hover .sliding-column-1, .sliding-container:hover .sliding-column-2,
+.sliding-container:hover .sliding-column-3, .sliding-container:hover .sliding-column-4 {
+  transition: none;
 }
