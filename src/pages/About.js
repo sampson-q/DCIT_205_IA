@@ -1,5 +1,10 @@
 import React from "react";
 import "../styles/Pages.css";
+import orgImage from '../assets/org.jpg';
+import comImage from '../assets/community.jpg';
+import disImage from '../assets/distance.jpg';
+import buildingFutureVid from '../assets/buildingfuture.mp4';
+import backgroundVideo from "../assets/video-bg.mp4";
 
 function About() {
     return (
@@ -22,13 +27,13 @@ function About() {
                 </div>
             </div>
             <div>
-                <div><h2 class="Containerheader">Get To Know Us</h2>
+                <div>
+                    <h2 class="Containerheader">Get To Know Us</h2>
                     <div className="imagecontainer">
                         <div className="imagecolumn">
                             <h2 className="imageheader">Our Organisation</h2>
                             <div className="Orgimage">
-                                {/* Body content for Our Org */}
-
+                                <img src={orgImage} />
                             </div>
 
                             <div className="imagefooter">
@@ -38,13 +43,14 @@ function About() {
                         </div>
 
                         <div className="imagecolumn">
-                            <h2 class="imageheader">Our Community</h2>
-                            <div className="Comimage">
-                                {/* Body content for Program 2 */}
-
+                            <h2 className="imageheader">Our Community</h2>
+                            <div className="Orgimage">
+                                <img src={comImage} />
                             </div>
+
                             <div className="imagefooter">
-                                <p><b>If you are inspired by a big challenge, you've come to the right place! The computer science community at the univrersity of Ghana encourages it's people to be vibrant and brave in taking on new challenges that push boundries beyond imagination.</b></p>
+                                <p><b>If you are inspired by a big challenge, you've come to the right place! The computer science community at the univrersity of Ghana encourages it's people to be vibrant and brave in taking on new challenges that push boundries beyond imagination.
+                                </b></p>
                             </div>
                         </div>
                     </div>
@@ -58,44 +64,30 @@ function About() {
                     <div className="imagecontainer">
                         <div className="imagecolumn">
                             <h2 className="imageheader">Distance Learning</h2>
-                            <div className="Disimage">
-                                {/* Body content for Our Org */}
-
+                            <div className="Orgimage">
+                                <img src={disImage} />
                             </div>
 
                             <div className="imagefooter">
-                                <p><b> Experience a UG-CDCD classroom from wherever you are. Take advantage of real-time lectures and personal interaction with professors through a suite of online delivery options, customizing your degree to fit your schedule. Our online classroom maintains the same level of academic rigor, while providing students with more ways of learning.
+                                <p><b>Experience a UG-CDCD classroom from wherever you are. Take advantage of real-time lectures and personal interaction with professors through a suite of online delivery options, customizing your degree to fit your schedule. Our online classroom maintains the same level of academic rigor, while providing students with more ways of learning.
                                 </b></p>
                             </div>
                         </div>
 
-                        <div className="imagecolumn">
-                            <h2 class="imageheader">Building Our Future</h2>
-                            <div className="future">
+                        <div className="imagecolumn" align="center">
+                            <h2 className="imageheader">Building the Future</h2>
+                            <video controls>
+                                <source src={buildingFutureVid} type="video/mp4" />
+                            </video>
 
-                                <video width="320" height="240" controls>
-                                    <source src="src\assets\buildingfuture.mp4" type="video/mp4" />
-                                </video>
-                                {/* Body content for Program 2 */}
-                                <p><b>So what defines our students, faculty and community members? Above all, its our belief in the infinite possibilitie and our unshakable optimism. Its a connection to others near and far. A hunger for socio-economic transformation that pushes us to tackle challenges and pursue progress. Its the conviction that together we can create a world of good. Join us on the journey.</b></p>
-                            </div>
                             <div className="imagefooter">
-
-
+                                <p><b>So what defines our students, faculty and community members? Above all, it's our belief in the infinite possibilitie and our unshakable optimism. Its a connection to others near and far. A hunger for socio-economic transformation that pushes us to tackle challenges and pursue progress. Its the conviction that together we can create a world of good. Join us on the journey.</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
-
-
         </div>
-
-
-
     );
 }
 

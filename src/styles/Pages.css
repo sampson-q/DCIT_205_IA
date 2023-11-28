@@ -77,65 +77,33 @@ h2 {
     border: 0px;
     border-radius: 5px;
     background-color: rgb(247, 224, 224);
-    box-shadow: 0px 0px 3px black;
-
-
-
+    box-shadow: 0px 0px 3px black
 }
 
-.imageheader {
-    font-size: 20px;
+.imageheader {  
     font-weight: bold;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    border-style: double;
-    width: 80%;
     text-align: center;
+    font-size: 25px;
 }
 
 .Orgimage {
-    background-image: url('../assets/org.jpg');
-    margin-bottom: 5px;
-    background-size: cover;
-    padding: 50px 50px;
-    height: 400px;
-    width: 1000px
+    text-align: center;
+}
+
+.Orgimage img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.imagecolumn video {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 .imagefooter {
     text-align: justify;
-    font-style: oblique;
-    font-size: xx-large;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-.Comimage {
-    background-image: url('../assets/community.jpg');
-    margin-bottom: 5px;
-    background-size: cover;
-    padding: 50px 50px;
-    height: 400px;
-    width: 1000px
-}
-
-.Disimage {
-    background-image: url('../assets/distance.jpg');
-    margin-bottom: 5px;
-    background-size: cover;
-    padding: 50px 50px;
-    height: 400px;
-    width: 1000px
-}
-
-.future {
-
-    margin-bottom: 5px;
-    background-size: cover;
-    padding: 50px 50px;
-    height: 400px;
-    width: 1000px
 }
 
 .bgresources {
