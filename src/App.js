@@ -45,7 +45,7 @@ function App() {
                             </>
                         } />
                         <Route path="/resources" element={<Resources />} />
-                        
+
                         <Route path="/courses" element={
                             <>
                                 <CoursesOffered />
@@ -95,6 +95,11 @@ function App() {
                                     description="Join our cutting-edge research initiatives. Contribute to projects at the forefront of technological advancements. Unlock the potential of innovation."
                                 />
                             </>
+                        } />
+                        <Route path="/entryrequirements" element={
+                            <div>
+                                <h1>Entry Requirements</h1>
+                            </div>
                         } />
                     </Routes>
                 </div>
