@@ -20,6 +20,7 @@ import softwareLabImage from "./assets/softwareLab.jpeg";
 import networkingLabImage from "./assets/networkingLab.jpeg";
 import computerLabImage from "./assets/computerLab.jpeg";
 import researchLabImage from "./assets/researchLab.jpeg";
+import EntryRequirements from "./pages/EntryRequirements";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -99,10 +100,8 @@ function App() {
                                 />
                             </>
                         } />
-                        <Route path="/entryrequirements" element={
-                            <div>
-                                <h1>Entry Requirements</h1>
-                            </div>
+                        <Route path="/entryrequirements" element={<EntryRequirements />
+
                         } />
                     </Routes>
                 </div>
