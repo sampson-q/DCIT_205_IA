@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Resources from "./pages/Resources";
 import Lab from "./components/Lab";
 import Courses from "./pages/Courses";
+import FAQs from "./pages/FAQs";
 
 import hardwareLabImage from "./assets/hardwareLab.jpeg";
 import roboticsLabImage from "./assets/roboticsLab.jpeg";
@@ -22,6 +23,7 @@ import computerLabImage from "./assets/computerLab.jpeg";
 import researchLabImage from "./assets/researchLab.jpeg";
 import EntryRequirements from "./pages/EntryRequirements";
 import OfficeHOD from "./pages/OfficeHOD";
+
 
 import deptImg from "./assets/departmentalevents.jpg";
 function App() {
@@ -43,7 +45,7 @@ function App() {
                             <>
                                 <VideoBackground />
                                 <ProgramsComponent />
-                                <InformationComponent image={deptImg} body="Programmes, seminars and events organized by the department" title="Departmental Events" event/>
+                                <InformationComponent image={deptImg} body="Programmes, seminars and events organized by the department" title="Departmental Events" event />
                                 <CoursesOffered />
                                 <JoinShortCourses />
                             </>
@@ -104,6 +106,7 @@ function App() {
                         } />
                         <Route path="/entryrequirements" element={<EntryRequirements />} />
                         <Route path="/officehod" element={<OfficeHOD />} />
+                        <Route path="/faqs" element={<FAQs />} />
                     </Routes>
                 </div>
 
